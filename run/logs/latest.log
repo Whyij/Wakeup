@@ -1,0 +1,121 @@
+[258月2026 05:47:45.177] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 136ms
+[258月2026 05:47:45.186] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
+[258月2026 05:47:45.186] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: E:\DSH\WAKEUP\run
+[258月2026 05:47:45.236] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 104) in 22ms
+[258月2026 05:47:45.236] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[258月2026 05:47:45.237] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
+[258月2026 05:47:45.238] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
+[258月2026 05:47:45.242] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[258月2026 05:47:45.675] [ForkJoinPool.commonPool-worker-10/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
+[258月2026 05:47:45.780] [ForkJoinPool.commonPool-worker-10/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates wakeup%%E:\\DSH\\WAKEUP\\build\\classes\\java\\main;wakeup%%E:\\DSH\\WAKEUP\\build\\resources\\main from env
+[258月2026 05:47:45.809] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 3070/PCIe/SSE2 GL version 3.3.0 NVIDIA 610.62, NVIDIA Corporation
+[258月2026 05:47:45.887] [ForkJoinPool.commonPool-worker-10/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[258月2026 05:47:45.889] [ForkJoinPool.commonPool-worker-10/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Minecraft 1.21.11 (minecraft)
+		NeoForge 21.11.45 (neoforge)
+		Wake Up 1.0.0 (wakeup)
+[258月2026 05:47:46.097] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
+[258月2026 05:47:46.115] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[258月2026 05:47:46.115] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar > net.neoforged.neoforge-coremods-21.11.45.jar
+[258月2026 05:47:46.183] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+ - minecraft (composite(jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45-client-extra-aka-minecraft-resources.jar), filtered(jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar))))
+ - mixinextras.neoforge (jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar > mixinextras-neoforge-0.5.3.jar))
+ - neoforge (composite(filtered(jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar))))
+ - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
+ - wakeup (composite(folder(E:/DSH/WAKEUP/build/classes/java/main), folder(E:/DSH/WAKEUP/build/resources/main)))
+[258月2026 05:47:46.192] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 15ms
+[258月2026 05:47:47.197] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 290 Datafixer optimizations took 269 milliseconds
+[258月2026 05:47:47.264] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[258月2026 05:47:47.304] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[258月2026 05:47:51.010] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[258月2026 05:47:51.011] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[258月2026 05:47:51.013] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[258月2026 05:47:51.014] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[258月2026 05:47:51.014] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[258月2026 05:47:51.016] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[258月2026 05:47:51.064] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.45, for MC 1.21.11
+[258月2026 05:47:51.450] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[258月2026 05:47:51.463] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[258月2026 05:47:51.531] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[258月2026 05:47:51.646] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[258月2026 05:47:52.148] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/wakeup, mod/neoforge
+[258月2026 05:47:52.468] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
+[258月2026 05:47:52.471] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
+[258月2026 05:47:52.583] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
+[258月2026 05:47:53.266] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 耳机 (ENC AUDIO)
+[258月2026 05:47:53.266] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[258月2026 05:47:53.267] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[258月2026 05:47:53.279] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[258月2026 05:47:53.280] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[258月2026 05:47:53.294] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[258月2026 05:47:53.325] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[258月2026 05:47:53.326] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[258月2026 05:47:53.382] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[258月2026 05:47:53.411] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[258月2026 05:47:53.412] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[258月2026 05:47:53.413] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[258月2026 05:47:53.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[258月2026 05:47:53.425] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[258月2026 05:47:53.451] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[258月2026 05:47:53.471] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[258月2026 05:47:53.472] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[258月2026 05:47:53.565] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[258月2026 05:48:06.880] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1470 recipes
+[258月2026 05:48:06.891] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1584 advancements
+[258月2026 05:48:06.893] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[258月2026 05:48:07.041] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.11
+[258月2026 05:48:07.041] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[258月2026 05:48:07.123] [Server thread/WARN] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Configuration file E:\DSH\WAKEUP\run\config\wakeup-server.toml is not correct. Correcting
+[258月2026 05:48:07.314] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[258月2026 05:48:07.328] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[258月2026 05:48:07.704] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 49 chunks for player spawn...
+[258月2026 05:48:07.704] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: 准备生成区域中：16%
+[258月2026 05:48:07.836] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: 准备生成区域中：59%
+[258月2026 05:48:07.880] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 565 ms
+[258月2026 05:48:08.136] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:58fc0887] logged in with entity id 69 at (138.30000001192093, -55.82352912385573, 246.37013517933053)
+[258月2026 05:48:08.180] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev加入了游戏
+[258月2026 05:48:08.274] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 32, from 10
+[258月2026 05:48:08.280] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[258月2026 05:48:08.299] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
+[258月2026 05:48:08.304] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 86 advancements
+[258月2026 05:48:08.354] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[258月2026 05:48:08.392] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[258月2026 05:48:08.471] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[258月2026 05:48:08.526] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[258月2026 05:48:08.582] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[258月2026 05:48:08.646] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[258月2026 05:48:08.692] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[258月2026 05:48:08.761] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[258月2026 05:48:08.912] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[258月2026 05:48:09.288] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[258月2026 05:48:10.085] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[258月2026 05:48:10.860] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[258月2026 05:48:12.605] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 1024 reached during a single frame. New capacity will be 2048.
+[258月2026 05:48:21.430] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[258月2026 05:48:21.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[test]'/minecraft:overworld
+[258月2026 05:48:21.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[test]'/minecraft:the_end
+[258月2026 05:48:21.659] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[test]'/minecraft:the_nether
+[258月2026 05:49:01.455] [Render thread/WARN] [net.neoforged.neoforge.client.gui.ConfigurationScreen.TranslationChecker/]: 
+	Dev warning - Untranslated configuration keys encountered. Please translate your configuration keys so users can properly configure your mod.
+
+The following keys have fallbacks. Please check if those are suitable, and translate them if they're not.
+  "wakeup.configuration.dreamChance.tooltip": "",
+  "wakeup.configuration.section.wakeup.server.toml.title": "",
+  "wakeup.configuration.title": "",
+  "wakeup.configuration.section.wakeup.server.toml": "",
+  "wakeup.configuration.dreamMaxSeconds.tooltip": "",
+  "wakeup.configuration.dreamMinSeconds.tooltip": "",
+  "wakeup.configuration.wakeOnDeath.tooltip": "",
+[258月2026 05:49:07.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: 已将时间设为13000]
+[258月2026 05:49:07.369] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 已将时间设为13000
+[258月2026 05:49:13.330] [Server thread/INFO] [com.wakeup.wakeup.DreamEvents/]: [wakeup] onWakeUp: updateLevel=false, dayTime=0, force=false
+[258月2026 05:49:13.346] [Server thread/INFO] [com.wakeup.wakeup.DreamManager/]: [wakeup] enter dream: layers=1, dayTime=24001, remainingTicks=180
+[258月2026 05:49:14.739] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 正在做梦：共 1 层，最深层剩余 151 tick
+[258月2026 05:49:22.314] [Server thread/INFO] [com.wakeup.wakeup.DreamManager/]: [wakeup] wake: layers after pop=0
+[258月2026 05:49:43.880] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[258月2026 05:49:43.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[test]'/minecraft:overworld
+[258月2026 05:49:43.922] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[test]'/minecraft:the_end
+[258月2026 05:49:43.922] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[test]'/minecraft:the_nether

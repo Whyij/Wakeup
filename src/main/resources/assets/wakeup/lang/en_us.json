@@ -1,0 +1,6 @@
+{
+  "wakeup.configuration.dreamChance": "Dream Chance",
+  "wakeup.configuration.dreamMinSeconds": "Min Dream Duration (Seconds)",
+  "wakeup.configuration.dreamMaxSeconds": "Max Dream Duration (Seconds)",
+  "wakeup.configuration.wakeOnDeath": "Wake on Full Party Wipe"
+}

@@ -1,0 +1,14 @@
+#每次睡觉跳过夜晚后进入梦境的概率（0.0 - 1.0）。
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+dreamChance = 0.7
+#梦境最短时长（秒）。每次进梦会在 [最短, 最长] 内随机取一个值。
+# Default: 300
+# Range: 1 ~ 36000
+dreamMinSeconds = 5
+#梦境最长时长（秒）。
+# Default: 1200
+# Range: 1 ~ 36000
+dreamMaxSeconds = 10
+#开启后，所有在线玩家同时死亡时会醒梦（单人即该玩家死亡）。
+wakeOnDeath = true

@@ -1,0 +1,6 @@
+{
+  "wakeup.configuration.dreamChance": "做梦概率",
+  "wakeup.configuration.dreamMinSeconds": "最短做梦时长（秒）",
+  "wakeup.configuration.dreamMaxSeconds": "最长做梦时长（秒）",
+  "wakeup.configuration.wakeOnDeath": "全员同时死亡时醒梦"
+}
