@@ -32,5 +32,5 @@
 |------|------|
 | `/wakeup status` | 查看是否做梦、层数、剩余时间 |
 | `/wakeup force` | 开关"下次睡觉必定做梦" |
-| `/wakeup dream` | 立即进梦（可重复执行测试梦中梦） |
-| `/wakeup wake` | 立即醒梦并回滚 |
+| `/wakeup dream` | 立即进梦 |
+| `/wakeup wake` | 立即醒梦 |
