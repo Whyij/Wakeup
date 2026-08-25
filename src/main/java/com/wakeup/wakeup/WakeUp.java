@@ -21,8 +21,8 @@ public final class WakeUp {
     public static final String MODID = "wakeup";
 
     public WakeUp(IEventBus modEventBus, ModContainer container) {
-        // Register a SERVER-type config file: config/wakeup-server.toml
-        container.registerConfig(ModConfig.Type.SERVER, WakeUpConfig.SPEC);
+        // COMMON-type config: editable from the main menu and in-game (config/wakeup-common.toml).
+        container.registerConfig(ModConfig.Type.COMMON, WakeUpConfig.SPEC);
         // In-game config screen, opened from the Mods list.
         container.registerExtensionPoint(IConfigScreenFactory.class,
                 (IConfigScreenFactory) (mc, parent) -> new ConfigurationScreen(mc, parent));

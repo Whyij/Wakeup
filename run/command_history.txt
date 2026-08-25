@@ -1,50 +1,50 @@
-/wakeup force
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
+/kill @e[type=minecraft:ender_dragon]
+/wakeup dream 999
+/wakeup time 5
+/wakeup dream 999
+/wakeup time 5
+/wakeup dream 999
+/kill @e[type=minecraft:ender_dragon]
+/wakeup dream 999
+/kill @e[type=minecraft:ender_dragon]
+/wakeup time 5
+/kill @e[type=minecraft:ender_dragon]
+/wakeup time 5
+/wakeup dream 999
+/kill @e[type=minecraft:ender_dragon]
+/wakeup time 5
+/wakeup dream 999
+/kill @e[type=minecraft:ender_dragon]
+/wakeup time 5
+/kill @e[type=minecraft:ender_dragon]
+/wakeup dream 999
+/wakeup time 5
+/wakeup insomnia
+/give @a minecraft:command_block
+/wakeup insomnia
+/wakeup status
+/wakeup insomnia
+/wakeup status
+/wakeup insomnia
+/wakeup status
+/wakeup insomnia
+/wakeup status
+/wakeup insomnia
+/wakeup status
+/tick rate 100
+/wakeup status
+/tick rate 200
+/wakeup status
+/tick rate 20
+/wakeup time 5
+/wakeup insomnia
+/wakeup time 5
+/wakeup insomnia
+/wakeup status
+/wakeup dream sleep
+/wakeup status
 /wakeup wake
 /wakeup status
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup force
-/time set night
-/wakeup wake
-/wakeup dream
-/wakeup status
-/wakeup dream
-/wakeup wake
-/wakeup status
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/wakeup dream
-/wakeup wake
-/time set night
-/wakeup dream
+/wakeup dream random
 /wakeup status
 /wakeup wake
-/wakeup status
-/time set night
-/wakeup status

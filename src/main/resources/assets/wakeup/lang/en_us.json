@@ -1,6 +1,17 @@
 {
   "wakeup.configuration.dreamChance": "Dream Chance",
-  "wakeup.configuration.dreamMinSeconds": "Min Dream Duration (Seconds)",
-  "wakeup.configuration.dreamMaxSeconds": "Max Dream Duration (Seconds)",
-  "wakeup.configuration.wakeOnDeath": "Wake on Full Party Wipe"
+  "wakeup.configuration.dreamMinSeconds": "Minimum Dream Duration (Seconds)",
+  "wakeup.configuration.dreamMaxSeconds": "Maximum Dream Duration (Seconds)",
+  "wakeup.configuration.wakeOnDeath": "Wake When All Players Die Simultaneously",
+  "wakeup.configuration.wakeWarningSeconds": "Seconds Before Waking",
+  "wakeup.configuration.wakeBeforeEffects": "Effects Before Waking",
+  "wakeup.configuration.wakeAfterEffects": "Effects After Waking",
+  "wakeup.configuration.wakeAfterParticles": "Particles After Waking",
+  "wakeup.configuration.wakeSoundId": "Wake Sound ID",
+  "wakeup.configuration.wakeSoundWhen": "Sound Playback Timing",
+  "wakeup.configuration.insomniaEnabled": "Insomnia Dream Toggle",
+  "wakeup.configuration.insomniaMinChance": "Insomnia Minimum Per-Tick Chance (%)",
+  "wakeup.configuration.insomniaMaxChance": "Insomnia Maximum Per-Tick Chance (%)",
+  "wakeup.configuration.insomniaIncreasePerNight": "Chance Increase Per Night Without Sleeping (Percentage Points)",
+  "wakeup.configuration.insomniaDurationMultiplier": "Insomnia Dream Duration Multiplier"
 }

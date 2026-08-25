@@ -13,7 +13,7 @@ fovEffectScale:1.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
-graphicsPreset:"fabulous"
+graphicsPreset:"custom"
 prioritizeChunkUpdates:1
 fullscreen:false
 gamma:1.0
@@ -29,7 +29,7 @@ particles:0
 reducedDebugInfo:false
 renderClouds:"true"
 cloudRange:128
-renderDistance:32
+renderDistance:10
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""

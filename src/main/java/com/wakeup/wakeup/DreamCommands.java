@@ -1,5 +1,6 @@
 package com.wakeup.wakeup;
 
+import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.chat.Component;
@@ -9,6 +10,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 
+import static net.minecraft.commands.Commands.argument;
 import static net.minecraft.commands.Commands.literal;
 
 /**
@@ -27,9 +29,28 @@ public final class DreamCommands {
                 literal("wakeup")
                         .requires(src -> src.permissions().hasPermission(Permissions.COMMANDS_GAMEMASTER))
                         .then(literal("status").executes(ctx -> status(ctx.getSource())))
+                        .then(literal("insomnia").executes(ctx -> insomnia(ctx.getSource())))
                         .then(literal("force").executes(ctx -> force(ctx.getSource())))
-                        .then(literal("dream").executes(ctx -> dream(ctx.getSource())))
+                        .then(literal("dream")
+                                .executes(ctx -> dream(ctx.getSource(), false, null))
+                                .then(literal("sleep")
+                                        .executes(ctx -> dream(ctx.getSource(), false, null))
+                                        .then(argument("seconds", IntegerArgumentType.integer(1))
+                                                .executes(ctx -> dream(ctx.getSource(), false,
+                                                        IntegerArgumentType.getInteger(ctx, "seconds")))))
+                                .then(literal("random")
+                                        .executes(ctx -> dream(ctx.getSource(), true, null))
+                                        .then(argument("seconds", IntegerArgumentType.integer(1))
+                                                .executes(ctx -> dream(ctx.getSource(), true,
+                                                        IntegerArgumentType.getInteger(ctx, "seconds")))))
+                                .then(argument("seconds", IntegerArgumentType.integer(1))
+                                        .executes(ctx -> dream(ctx.getSource(), false,
+                                                IntegerArgumentType.getInteger(ctx, "seconds")))))
                         .then(literal("wake").executes(ctx -> wake(ctx.getSource())))
+                        .then(literal("time")
+                                .then(argument("seconds", IntegerArgumentType.integer(0))
+                                        .executes(ctx -> setTime(ctx.getSource(),
+                                                IntegerArgumentType.getInteger(ctx, "seconds")))))
         );
     }
 
@@ -45,6 +66,23 @@ public final class DreamCommands {
         return 1;
     }
 
+    private static int insomnia(CommandSourceStack src) throws CommandSyntaxException {
+        ServerPlayer player = src.getPlayerOrException();
+        int nights = DreamManager.getInsomniaNights(player);
+        double chance = DreamManager.getInsomniaChance(player);
+        double min = WakeUpConfig.INSOMNIA_MIN_CHANCE.get();
+        double max = WakeUpConfig.INSOMNIA_MAX_CHANCE.get();
+        double inc = WakeUpConfig.INSOMNIA_INCREASE_PER_NIGHT.get();
+        src.sendSuccess(() -> Component.literal(
+                "§e失眠状态：已熬夜 " + nights + " 夜，当前每刻进梦概率 " + fmt(chance)
+                        + "（最小 " + fmt(min) + "，最大 " + fmt(max) + "，每夜 +" + fmt(inc) + "）"), false);
+        return 1;
+    }
+
+    private static String fmt(double percent) {
+        return String.format(java.util.Locale.ROOT, "%.4f%%", percent);
+    }
+
     private static int force(CommandSourceStack src) throws CommandSyntaxException {
         ServerPlayer player = src.getPlayerOrException();
         boolean on = DreamManager.toggleForceDream(player);
@@ -53,10 +91,20 @@ public final class DreamCommands {
         return 1;
     }
 
-    private static int dream(CommandSourceStack src) throws CommandSyntaxException {
+    private static int dream(CommandSourceStack src, boolean insomnia, Integer seconds) throws CommandSyntaxException {
         ServerPlayer player = src.getPlayerOrException();
-        DreamManager.enterDream(player.level().getServer(), player);
-        src.sendSuccess(() -> Component.literal("§d已进入梦境"), false);
+        long ticks;
+        if (seconds != null) {
+            ticks = seconds * 20L;
+        } else if (insomnia) {
+            ticks = DreamManager.randomInsomniaDuration(player);
+        } else {
+            ticks = DreamManager.randomDuration(player);
+        }
+        DreamManager.enterDream(player.level().getServer(), player, ticks);
+        String kind = insomnia ? "随机梦（失眠）" : "睡觉梦";
+        src.sendSuccess(() -> Component.literal(
+                "§d已进入" + kind + "（时长 " + (ticks / 20L) + " 秒）"), false);
         return 1;
     }
 
@@ -67,6 +115,16 @@ public final class DreamCommands {
         }
         DreamManager.wake(src.getServer());
         src.sendSuccess(() -> Component.literal("§a已强制苏醒并回滚到快照"), false);
+        return 1;
+    }
+
+    private static int setTime(CommandSourceStack src, int seconds) {
+        if (!DreamManager.isDreaming(src.getServer())) {
+            src.sendFailure(Component.literal("§c当前没有在做梦"));
+            return 0;
+        }
+        DreamManager.setTopRemaining(src.getServer(), seconds * 20L);
+        src.sendSuccess(() -> Component.literal("§a梦境剩余时长已设为 " + seconds + " 秒"), false);
         return 1;
     }
 }

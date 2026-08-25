@@ -2,5 +2,16 @@
   "wakeup.configuration.dreamChance": "做梦概率",
   "wakeup.configuration.dreamMinSeconds": "最短做梦时长（秒）",
   "wakeup.configuration.dreamMaxSeconds": "最长做梦时长（秒）",
-  "wakeup.configuration.wakeOnDeath": "全员同时死亡时醒梦"
+  "wakeup.configuration.wakeOnDeath": "全员同时死亡时醒梦",
+  "wakeup.configuration.wakeWarningSeconds": "即将苏醒提前秒数",
+  "wakeup.configuration.wakeBeforeEffects": "苏醒前效果列表",
+  "wakeup.configuration.wakeAfterEffects": "苏醒后效果列表",
+  "wakeup.configuration.wakeAfterParticles": "苏醒后粒子列表",
+  "wakeup.configuration.wakeSoundId": "苏醒音效ID",
+  "wakeup.configuration.wakeSoundWhen": "音效播放时机",
+  "wakeup.configuration.insomniaEnabled": "失眠做梦开关",
+  "wakeup.configuration.insomniaMinChance": "失眠最小每刻概率（%）",
+  "wakeup.configuration.insomniaMaxChance": "失眠最大每刻概率（%）",
+  "wakeup.configuration.insomniaIncreasePerNight": "每熬一夜增加概率（百分点）",
+  "wakeup.configuration.insomniaDurationMultiplier": "失眠梦境时长倍率"
 }

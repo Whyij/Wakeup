@@ -1,12 +1,16 @@
 package com.wakeup.wakeup;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.level.ChunkPos;
+import net.minecraft.world.level.LevelAccessor;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent;
+import net.neoforged.neoforge.event.level.ChunkEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import org.slf4j.Logger;
 
@@ -40,10 +44,23 @@ public final class DreamEvents {
             return;
         }
 
+        // They slept through the night: clear any accumulated insomnia.
+        DreamManager.resetInsomnia(player);
+
         if (DreamManager.isForceDream(player)
                 || player.getRandom().nextDouble() < WakeUpConfig.DREAM_CHANCE.get()) {
             DreamManager.queueDream(player);
         }
+    }
+
+    @SubscribeEvent
+    public static void onChunkLoad(ChunkEvent.Load event) {
+        LevelAccessor accessor = event.getLevel();
+        if (!(accessor instanceof ServerLevel level)) {
+            return; // server side only
+        }
+        ChunkPos pos = event.getChunk().getPos();
+        DreamManager.onChunkLoad(level, pos.x, pos.z);
     }
 
     @SubscribeEvent
@@ -60,7 +77,6 @@ public final class DreamEvents {
         if (!DreamManager.isDreaming(player.level().getServer())) {
             return;
         }
-        // A re-kill we issue ourselves; let it happen normally.
         if (DreamManager.shouldIgnoreDeath(player)) {
             return;
         }

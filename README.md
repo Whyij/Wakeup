@@ -1,82 +1,61 @@
 # Wake Up
 
-A NeoForge mod for Minecraft 1.21.11. Sleeping through the night has a chance to trap
-the whole server in a **timed dream**; when the dream ends, the server **rolls back** to
-the moment of waking up. Nested dreams (梦中梦 / dream-within-a-dream) are supported via a
-snapshot stack.
+一个 NeoForge 模组，适用于 **Minecraft 1.21.11**。能让玩家体验到做梦
 
 ## 玩法 / Gameplay
 
-1. 玩家上床，跳过夜晚（多人时需**所有玩家都入睡**，见下方"多人"）。
-2. 起床那一刻，以概率 `dreamChance` 触发做梦：**服务器保存"情境"快照**，进入第 1 层梦境，启动随机时长计时器。
-3. 梦境中一切正常游玩，但改动都是"临时的"。
-4. 计时结束 → 苏醒 → 服务器**回滚到快照**（世界时间/天气 + 所有玩家状态）。
-5. 梦中再次睡觉并跳过夜晚 → 可进入**更深一层**（快照栈 +1，外层计时暂停）。
-6. 苏醒按"后进先出"逐层弹出：先醒最深层 → 回滚该层快照 → 继续上一层，直到全部醒完。
+1. 玩家上床跳过夜晚。
+2. 起床那一刻，以概率 `dreamChance` 触发做梦。
+3. 梦境中一切照常游玩，但改动都是"临时的"。
+4. 梦境时间结束 → 苏醒 → 服务器**回滚到快照**。
+5. 长时间不睡觉有概率直接睡着进入梦境（详见失眠）
+
+### 失眠 / Insomnia
+
+- 玩家**长期不睡觉**会积累"熬夜数"；每熬一夜，每刻进梦概率上升。
+- 命中后随机进入一场**失眠梦**（时长是睡觉梦的x倍，默认0.5）。
+- 正常睡一觉后熬夜数**清零**。
 
 ## 配置 / Config
 
-配置文件生成在 `config/wakeup-server.toml`：
+配置文件生成在 `config/wakeup-common.toml`，可在**主菜单**或游戏内 **Mods 列表**直接编辑。
 
 | 键 | 默认 | 说明 |
 |----|------|------|
-| `dreamChance` | `0.5` | 触发做梦的概率（0.0–1.0） |
+| `dreamChance` | `0.2` | 睡觉跳过夜晚后进入梦境的概率（0.0–1.0） |
 | `dreamMinSeconds` | `300` | 梦境最短时长（秒） |
 | `dreamMaxSeconds` | `1200` | 梦境最长时长（秒），每次在 [min,max] 内随机 |
+| `insomniaEnabled` | `true` | 失眠机制开关 |
+| `insomniaMinChance` | `0.0` | 失眠最小每刻概率（%） |
+| `insomniaMaxChance` | `0.15` | 失眠最大每刻概率（%） |
+| `insomniaIncreasePerNight` | `0.004` | 每熬一夜增加的概率（百分点） |
+| `insomniaDurationMultiplier` | `0.5` | 失眠梦时长倍率（相对睡觉梦随机时长范围） |
 | `wakeOnDeath` | `true` | 全员同时死亡时是否醒梦（单机=该玩家死亡） |
+| `wakeWarningSeconds` | `1.5` | 剩余多少秒进入"即将苏醒"阶段（开始施苏醒前效果），设为 0 关闭 |
+| `wakeBeforeEffects` | `minecraft:nausea:0:9:1;minecraft:slowness:0:5:1;minecraft:darkness:0.5:5:1` | 即将苏醒时依次施加的效果 |
+| `wakeAfterEffects` | `minecraft:blindness:0:3:1;minecraft:slowness:0:1.5:4;minecraft:slowness:1.5:2:1` | 苏醒后依次施加的效果 |
+| `wakeAfterParticles` | `minecraft:end_rod:0:40` | 苏醒后依次生成的粒子 |
+| `wakeSoundId` | `minecraft:block.portal.travel` | 苏醒音效 ID（空字符串关闭） |
+| `wakeSoundWhen` | `before` | 音效时机：`none`/`before`/`after`/`both` |
 
-## 多人 / Multiplayer
+- 效果格式：`效果ID:延迟秒:持续秒:等级`，多个用 `;` 分隔。
+- 粒子格式：`粒子ID:延迟秒:数量`，多个用 `;` 分隔。
 
-- 多人时依赖原版默认 `playersSleepingPercentage=100`（所有玩家入睡才跳过夜晚）。
-- 梦境是**服务器级**的：快照包含世界状态 + 所有在线玩家 + 所有已加载实体。
-- 梦中若**所有玩家退出**，倒计时**暂停**；有玩家重连后继续。
-- 梦中**单个玩家死亡不会醒梦**（按正常死亡处理）；只有**所有在线玩家同时死亡**才醒梦回滚（单机即"该玩家死亡"）。
-- 若某玩家在梦结束时处于离线，会在其下次登录时补做回滚。
+## 命令 / Commands
 
-## 测试命令 / Test Commands
-
-> 仅**创造模式**可用（服务端控制台不受限）。
+> 需要作弊权限。
 
 | 命令 | 作用 |
 |------|------|
-| `/wakeup status` | 查看是否做梦、层数、剩余 tick |
+| `/wakeup status` | 查看是否做梦、层数、剩余时间 |
+| `/wakeup insomnia` | 查看失眠状态：熬夜数、当前每刻概率、概率配置 |
 | `/wakeup force` | 开关"下次睡觉必定做梦"（再执行一次关闭） |
-| `/wakeup dream` | 立即进梦（拍快照 + 进入一层梦境，可重复执行测嵌套） |
+| `/wakeup dream` | 进入睡觉梦（随机时长） |
+| `/wakeup dream sleep [秒]` | 进入睡觉梦（不写秒数为随机时长） |
+| `/wakeup dream random [秒]` | 进入随机梦/失眠梦（时长 × 倍率） |
 | `/wakeup wake` | 立即醒梦（弹栈 + 回滚） |
+| `/wakeup time <秒>` | 设置最深层剩余时长 |
 
-## 构建 / Build
+## 注意 / Notes
 
-要求：JDK 21。
-
-```bash
-gradlew build          # Windows 用 gradlew.bat
-```
-
-产物在 `build/libs/wakeup-1.0.0.jar`。
-
-开发运行：
-
-```bash
-gradlew runClient      # 启动客户端（单机测试）
-gradlew runServer      # 启动服务端
-```
-
-## 代码结构 / Code layout
-
-```
-src/main/java/com/wakeup/wakeup/
-  WakeUp.java         # @Mod 入口，注册 config
-  WakeUpConfig.java   # 配置项（NeoForge Config API）
-  ServerSnapshot.java # 捕获/恢复整服"情境"（世界 + 所有玩家）
-  WakeUpSavedData.java# 持久化状态：梦境栈 + 离线回滚队列（随世界存档保存）
-  DreamManager.java   # 核心逻辑：进梦/计时/苏醒/嵌套栈
-  DreamEvents.java    # 事件接线：睡眠、tick、死亡、登录、服务器启动
-```
-
-## 已知注意 / Notes
-
-- 本工程已针对 **NeoForge 21.11.45（Minecraft 1.21.11）** 编译通过（`gradlew build` 成功，产物 `build/libs/wakeup-1.0.0.jar`）。
-- 1.21.6+ 起 NBT 与若干命名发生变更，代码已按新 API 编写：`ResourceLocation→Identifier`、
-  `CompoundTag.getXxx` 返回 `Optional`（改用 `getXxxOr`）、`ItemStack` 序列化走 `CODEC`、
-  `SavedData` 走 `SavedDataType`、`kill()` 需 `ServerLevel`、`teleportTo` 为 8 参。
-- 多人时依赖原版默认 `playersSleepingPercentage=100`（"所有玩家入睡才跳过夜晚"），模组不再显式改写该 gamerule。
+- 并未测试多人游戏，多人游戏下bug可能又大又多
