@@ -156,6 +156,15 @@ public final class DreamManager {
         return Math.min(min + nights * inc, max);
     }
 
+    /** Returns this player's current sleep dream chance (dreamChance boosted by missed nights). */
+    public static double getSleepDreamChance(ServerPlayer player) {
+        int nights = getInsomniaNights(player);
+        double base = WakeUpConfig.DREAM_CHANCE.get();
+        double inc = WakeUpConfig.DREAM_CHANCE_INCREASE_PER_NIGHT.get();
+        double max = WakeUpConfig.DREAM_CHANCE_MAX.get();
+        return Math.min(base + nights * inc, max);
+    }
+
     /** Toggles "force dream on next night-skip" for the player. Returns the new state. */
     public static boolean toggleForceDream(ServerPlayer player) {
         UUID id = player.getUUID();

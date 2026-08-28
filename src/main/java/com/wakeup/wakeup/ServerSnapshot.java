@@ -229,8 +229,14 @@ public final class ServerSnapshot {
             return;
         }
         ListTag blocks = rec.getListOrEmpty("blocks");
+        // Restore bottom-up so lower (supporting) blocks go back before upper (supported) ones.
+        // Otherwise two-tall blocks like doors/beds/double-plants can come back only "half" placed.
+        List<CompoundTag> sorted = new ArrayList<>();
         for (int i = 0; i < blocks.size(); i++) {
-            CompoundTag b = (CompoundTag) blocks.get(i);
+            sorted.add((CompoundTag) blocks.get(i));
+        }
+        sorted.sort((a, b) -> Integer.compare(a.getIntOr("y", 0), b.getIntOr("y", 0)));
+        for (CompoundTag b : sorted) {
             BlockPos pos = new BlockPos(b.getIntOr("x", 0), b.getIntOr("y", 0), b.getIntOr("z", 0));
             BlockState state = NbtUtils.readBlockState(
                     level.registryAccess().lookupOrThrow(Registries.BLOCK), b.getCompoundOrEmpty("state"));
@@ -255,6 +261,9 @@ public final class ServerSnapshot {
             if (be != null) {
                 be.loadWithComponents(TagValueInput.create(ProblemReporter.DISCARDING,
                         level.registryAccess(), bt.getCompoundOrEmpty("nbt")));
+                // Sync the restored data (e.g. sign text) back to the client.
+                be.setChanged();
+                level.sendBlockUpdated(pos, level.getBlockState(pos), level.getBlockState(pos), 3);
             }
         }
     }

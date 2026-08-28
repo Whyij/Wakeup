@@ -14,6 +14,14 @@ public final class WakeUpConfig {
             .comment("每次睡觉跳过夜晚后进入梦境的概率（0.0 - 1.0）。")
             .defineInRange("dreamChance", 0.2, 0.0, 1.0);
 
+    public static final ModConfigSpec.DoubleValue DREAM_CHANCE_INCREASE_PER_NIGHT = BUILDER
+            .comment("每熬一夜增加的睡觉做梦概率（0.0 - 1.0）。默认 0.05 表示每晚 +5%。")
+            .defineInRange("dreamChanceIncreasePerNight", 0.05, 0.0, 1.0);
+
+    public static final ModConfigSpec.DoubleValue DREAM_CHANCE_MAX = BUILDER
+            .comment("睡觉做梦的最大概率（0.0 - 1.0）。默认 1.0 表示最高 100%。")
+            .defineInRange("dreamChanceMax", 1.0, 0.0, 1.0);
+
     public static final ModConfigSpec.IntValue DREAM_MIN_SECONDS = BUILDER
             .comment("梦境最短时长（秒）。每次进梦会在 [最短, 最长] 内随机取一个值。")
             .defineInRange("dreamMinSeconds", 300, 1, 36000);
@@ -69,6 +77,10 @@ public final class WakeUpConfig {
     public static final ModConfigSpec.ConfigValue<String> WAKE_SOUND_WHEN = BUILDER
             .comment("音效播放时机：none=不播放，before=即将苏醒时，after=苏醒后，both=前后都播放。")
             .define("wakeSoundWhen", "before");
+
+    public static final ModConfigSpec.IntValue TOTEM_COOLDOWN_SECONDS = BUILDER
+            .comment("图腾（陀螺）的使用间隔（秒）。默认 1200 表示 20 分钟。设为 0 可关闭冷却。")
+            .defineInRange("totemCooldownSeconds", 1200, 0, 360000);
 
     public static final ModConfigSpec SPEC = BUILDER.build();
 

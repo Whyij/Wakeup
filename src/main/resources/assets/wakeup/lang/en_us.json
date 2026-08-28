@@ -1,5 +1,7 @@
 {
   "wakeup.configuration.dreamChance": "Dream Chance",
+  "wakeup.configuration.dreamChanceIncreasePerNight": "Sleep Dream Chance Increase Per Night",
+  "wakeup.configuration.dreamChanceMax": "Maximum Sleep Dream Chance",
   "wakeup.configuration.dreamMinSeconds": "Minimum Dream Duration (Seconds)",
   "wakeup.configuration.dreamMaxSeconds": "Maximum Dream Duration (Seconds)",
   "wakeup.configuration.wakeOnDeath": "Wake When All Players Die Simultaneously",
@@ -12,6 +14,12 @@
   "wakeup.configuration.insomniaEnabled": "Insomnia Dream Toggle",
   "wakeup.configuration.insomniaMinChance": "Insomnia Minimum Per-Tick Chance (%)",
   "wakeup.configuration.insomniaMaxChance": "Insomnia Maximum Per-Tick Chance (%)",
-  "wakeup.configuration.insomniaIncreasePerNight": "Chance Increase Per Night Without Sleeping (Percentage Points)",
-  "wakeup.configuration.insomniaDurationMultiplier": "Insomnia Dream Duration Multiplier"
+  "wakeup.configuration.insomniaIncreasePerNight": "Chance Increase Per Night Without Sleeping (%)",
+  "wakeup.configuration.insomniaDurationMultiplier": "Insomnia Dream Duration Multiplier",
+  "wakeup.configuration.totemCooldownSeconds": "Totem Cooldown (Seconds)",
+  "item.wakeup.totem": "Totem",
+  "entity.wakeup.spinning_top": "Spinning Top",
+  "gamerule.category.wakeup.wakeup": "Wake Up",
+  "gamerule.wakeup.give_totem": "Give Starting Totem",
+  "gamerule.wakeup.give_totem.description": "Whether new players receive a totem (spinning top) when they first join the world."
 }

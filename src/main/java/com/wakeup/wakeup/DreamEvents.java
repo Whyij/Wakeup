@@ -44,11 +44,12 @@ public final class DreamEvents {
             return;
         }
 
-        // They slept through the night: clear any accumulated insomnia.
+        // The boosted sleep-dream chance uses the nights accrued before sleeping, then reset.
+        double chance = DreamManager.getSleepDreamChance(player);
         DreamManager.resetInsomnia(player);
 
         if (DreamManager.isForceDream(player)
-                || player.getRandom().nextDouble() < WakeUpConfig.DREAM_CHANCE.get()) {
+                || player.getRandom().nextDouble() < chance) {
             DreamManager.queueDream(player);
         }
     }
@@ -92,6 +93,7 @@ public final class DreamEvents {
     public static void onJoin(PlayerEvent.PlayerLoggedInEvent event) {
         if (event.getEntity() instanceof ServerPlayer player) {
             DreamManager.handleJoin(player);
+            WakeUp.giveStartingTotem(player);
         }
     }
 

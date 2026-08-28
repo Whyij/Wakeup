@@ -1,39 +1,3 @@
-/kill @e[type=minecraft:ender_dragon]
-/wakeup dream 999
-/wakeup time 5
-/wakeup dream 999
-/wakeup time 5
-/wakeup dream 999
-/kill @e[type=minecraft:ender_dragon]
-/wakeup dream 999
-/kill @e[type=minecraft:ender_dragon]
-/wakeup time 5
-/kill @e[type=minecraft:ender_dragon]
-/wakeup time 5
-/wakeup dream 999
-/kill @e[type=minecraft:ender_dragon]
-/wakeup time 5
-/wakeup dream 999
-/kill @e[type=minecraft:ender_dragon]
-/wakeup time 5
-/kill @e[type=minecraft:ender_dragon]
-/wakeup dream 999
-/wakeup time 5
-/wakeup insomnia
-/give @a minecraft:command_block
-/wakeup insomnia
-/wakeup status
-/wakeup insomnia
-/wakeup status
-/wakeup insomnia
-/wakeup status
-/wakeup insomnia
-/wakeup status
-/wakeup insomnia
-/wakeup status
-/tick rate 100
-/wakeup status
-/tick rate 200
 /wakeup status
 /tick rate 20
 /wakeup time 5
@@ -48,3 +12,39 @@
 /wakeup dream random
 /wakeup status
 /wakeup wake
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5
+/wakeup insomnia
+/give @a minecraft:command_block
+/wakeup insomnia
+/time set night
+/time set day
+/wakeup insomnia
+/time set night
+/time set day
+/time set night
+/time set day
+/time set night
+/time set day
+/wakeup insomnia
+/give @a wakeup:totem
+/time set night
+/wakeup time 5
+/give @a wakeup:totem
+/time set day
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5
+/time set night
+/wakeup time 5

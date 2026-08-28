@@ -1,153 +1,67 @@
-[268月2026 00:48:08.312] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 135ms
-[268月2026 00:48:08.321] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
-[268月2026 00:48:08.321] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: E:\DSH\WAKEUP\run
-[268月2026 00:48:08.372] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 104) in 22ms
-[268月2026 00:48:08.372] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
-[268月2026 00:48:08.373] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
-[268月2026 00:48:08.374] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
-[268月2026 00:48:08.378] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[268月2026 00:48:08.856] [ForkJoinPool.commonPool-worker-7/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
-[268月2026 00:48:08.979] [ForkJoinPool.commonPool-worker-7/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates wakeup%%E:\\DSH\\WAKEUP\\build\\classes\\java\\main;wakeup%%E:\\DSH\\WAKEUP\\build\\resources\\main from env
-[268月2026 00:48:08.994] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 3070/PCIe/SSE2 GL version 3.3.0 NVIDIA 610.62, NVIDIA Corporation
-[268月2026 00:48:09.103] [ForkJoinPool.commonPool-worker-7/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[268月2026 00:48:09.105] [ForkJoinPool.commonPool-worker-7/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[288月2026 23:51:00.777] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 138ms
+[288月2026 23:51:00.785] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
+[288月2026 23:51:00.785] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: E:\DSH\WAKEUP\run
+[288月2026 23:51:00.839] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 104) in 25ms
+[288月2026 23:51:00.840] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[288月2026 23:51:00.841] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
+[288月2026 23:51:00.841] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
+[288月2026 23:51:00.846] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[288月2026 23:51:01.270] [ForkJoinPool.commonPool-worker-9/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
+[288月2026 23:51:01.374] [ForkJoinPool.commonPool-worker-9/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates wakeup%%E:\\DSH\\WAKEUP\\build\\classes\\java\\main;wakeup%%E:\\DSH\\WAKEUP\\build\\resources\\main from env
+[288月2026 23:51:01.385] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 3070/PCIe/SSE2 GL version 3.3.0 NVIDIA 610.62, NVIDIA Corporation
+[288月2026 23:51:01.491] [ForkJoinPool.commonPool-worker-9/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[288月2026 23:51:01.493] [ForkJoinPool.commonPool-worker-9/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
 		Minecraft 1.21.11 (minecraft)
 		NeoForge 21.11.45 (neoforge)
 		Wakeup 1.1.0-1.21.11 (wakeup)
-[268月2026 00:48:09.282] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
-[268月2026 00:48:09.303] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
-[268月2026 00:48:09.303] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar > net.neoforged.neoforge-coremods-21.11.45.jar
-[268月2026 00:48:09.374] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+[288月2026 23:51:01.683] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Whyij/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
+[288月2026 23:51:01.703] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[288月2026 23:51:01.704] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar > net.neoforged.neoforge-coremods-21.11.45.jar
+[288月2026 23:51:01.785] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
  - minecraft (composite(jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45-client-extra-aka-minecraft-resources.jar), filtered(jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar))))
  - mixinextras.neoforge (jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar > mixinextras-neoforge-0.5.3.jar))
  - neoforge (composite(filtered(jar(E:/DSH/WAKEUP/build/moddev/artifacts/neoforge-21.11.45.jar))))
  - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
  - wakeup (composite(folder(E:/DSH/WAKEUP/build/classes/java/main), folder(E:/DSH/WAKEUP/build/resources/main)))
-[268月2026 00:48:09.383] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 16ms
-[268月2026 00:48:10.429] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 290 Datafixer optimizations took 262 milliseconds
-[268月2026 00:48:10.462] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[268月2026 00:48:10.504] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
-[268月2026 00:48:14.092] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[268月2026 00:48:14.093] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[268月2026 00:48:14.095] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[268月2026 00:48:14.095] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[268月2026 00:48:14.096] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[268月2026 00:48:14.097] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
-[268月2026 00:48:14.144] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.45, for MC 1.21.11
-[268月2026 00:48:14.521] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[268月2026 00:48:14.534] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[268月2026 00:48:14.603] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[268月2026 00:48:14.735] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
-[268月2026 00:48:15.222] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/wakeup, mod/neoforge
-[268月2026 00:48:15.498] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
-[268月2026 00:48:15.499] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
-[268月2026 00:48:15.581] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
-[268月2026 00:48:16.329] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 耳机 (ENC AUDIO)
-[268月2026 00:48:16.330] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[268月2026 00:48:16.330] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[268月2026 00:48:16.341] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[268月2026 00:48:16.347] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[268月2026 00:48:16.361] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[268月2026 00:48:16.393] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[268月2026 00:48:16.395] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[268月2026 00:48:16.449] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[268月2026 00:48:16.478] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[268月2026 00:48:16.479] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[268月2026 00:48:16.480] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
-[268月2026 00:48:16.486] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
-[268月2026 00:48:16.495] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[268月2026 00:48:16.522] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[268月2026 00:48:16.542] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
-[268月2026 00:48:16.543] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[268月2026 00:48:16.638] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[268月2026 00:48:28.852] [Render thread/WARN] [net.neoforged.neoforge.client.gui.ConfigurationScreen.TranslationChecker/]: 
-	Dev warning - Untranslated configuration keys encountered. Please translate your configuration keys so users can properly configure your mod.
-
-The following keys have fallbacks. Please check if those are suitable, and translate them if they're not.
-  "wakeup.configuration.wakeSoundWhen.tooltip": "",
-  "wakeup.configuration.insomniaMinChance.tooltip": "",
-  "wakeup.configuration.insomniaDurationMultiplier.tooltip": "",
-  "wakeup.configuration.insomniaEnabled.tooltip": "",
-  "wakeup.configuration.dreamMinSeconds.tooltip": "",
-  "wakeup.configuration.wakeAfterParticles.tooltip": "",
-  "wakeup.configuration.insomniaMaxChance.tooltip": "",
-  "wakeup.configuration.section.wakeup.common.toml": "",
-  "wakeup.configuration.dreamChance.tooltip": "",
-  "wakeup.configuration.wakeSoundId.tooltip": "",
-  "wakeup.configuration.section.wakeup.common.toml.title": "",
-  "wakeup.configuration.title": "",
-  "wakeup.configuration.wakeBeforeEffects.tooltip": "",
-  "wakeup.configuration.wakeAfterEffects.tooltip": "",
-  "wakeup.configuration.insomniaIncreasePerNight.tooltip": "",
-  "wakeup.configuration.dreamMaxSeconds.tooltip": "",
-  "wakeup.configuration.wakeOnDeath.tooltip": "",
-  "wakeup.configuration.wakeWarningSeconds.tooltip": "",
-[268月2026 00:48:45.730] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/wakeup, mod/neoforge
-[268月2026 00:48:45.887] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
-[268月2026 00:48:45.944] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
-[268月2026 00:48:46.048] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
-[268月2026 00:48:46.369] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 耳机 (ENC AUDIO)
-[268月2026 00:48:46.370] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[268月2026 00:48:46.370] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[268月2026 00:48:46.374] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[268月2026 00:48:46.375] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[268月2026 00:48:46.384] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[268月2026 00:48:46.400] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[268月2026 00:48:46.404] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[268月2026 00:48:46.440] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[268月2026 00:48:46.457] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[268月2026 00:48:46.458] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[268月2026 00:48:46.459] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
-[268月2026 00:48:46.463] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
-[268月2026 00:48:46.469] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[268月2026 00:48:46.485] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[268月2026 00:48:46.496] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
-[268月2026 00:48:46.497] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[268月2026 00:48:46.562] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[268月2026 00:49:07.495] [Render thread/WARN] [net.neoforged.neoforge.client.gui.ConfigurationScreen.TranslationChecker/]: 
-	Dev warning - Untranslated configuration keys encountered. Please translate your configuration keys so users can properly configure your mod.
-
-The following keys have fallbacks. Please check if those are suitable, and translate them if they're not.
-  "wakeup.configuration.wakeSoundWhen.tooltip": "",
-  "wakeup.configuration.insomniaMinChance.tooltip": "",
-  "wakeup.configuration.insomniaDurationMultiplier.tooltip": "",
-  "wakeup.configuration.insomniaEnabled.tooltip": "",
-  "wakeup.configuration.dreamMinSeconds.tooltip": "",
-  "wakeup.configuration.wakeAfterParticles.tooltip": "",
-  "wakeup.configuration.insomniaMaxChance.tooltip": "",
-  "wakeup.configuration.section.wakeup.common.toml": "",
-  "wakeup.configuration.dreamChance.tooltip": "",
-  "wakeup.configuration.wakeSoundId.tooltip": "",
-  "wakeup.configuration.section.wakeup.common.toml.title": "",
-  "wakeup.configuration.title": "",
-  "wakeup.configuration.wakeBeforeEffects.tooltip": "",
-  "wakeup.configuration.wakeAfterEffects.tooltip": "",
-  "wakeup.configuration.insomniaIncreasePerNight.tooltip": "",
-  "wakeup.configuration.dreamMaxSeconds.tooltip": "",
-  "wakeup.configuration.wakeOnDeath.tooltip": "",
-  "wakeup.configuration.wakeWarningSeconds.tooltip": "",
-[268月2026 00:49:12.333] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/wakeup, mod/neoforge
-[268月2026 00:49:12.434] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
-[268月2026 00:49:12.438] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
-[268月2026 00:49:12.497] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
-[268月2026 00:49:12.819] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 耳机 (ENC AUDIO)
-[268月2026 00:49:12.820] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[268月2026 00:49:12.820] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[268月2026 00:49:12.823] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[268月2026 00:49:12.828] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[268月2026 00:49:12.836] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[268月2026 00:49:12.849] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[268月2026 00:49:12.850] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[268月2026 00:49:12.880] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[268月2026 00:49:12.895] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[268月2026 00:49:12.896] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[268月2026 00:49:12.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
-[268月2026 00:49:12.901] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
-[268月2026 00:49:12.906] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[268月2026 00:49:12.920] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[268月2026 00:49:12.929] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
-[268月2026 00:49:12.930] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[268月2026 00:49:12.988] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[288月2026 23:51:01.796] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 20ms
+[288月2026 23:51:02.835] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 290 Datafixer optimizations took 275 milliseconds
+[288月2026 23:51:02.871] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[288月2026 23:51:02.926] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[288月2026 23:51:08.982] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[288月2026 23:51:08.983] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[288月2026 23:51:08.985] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[288月2026 23:51:08.986] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[288月2026 23:51:08.986] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[288月2026 23:51:08.987] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[288月2026 23:51:09.050] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.45, for MC 1.21.11
+[288月2026 23:51:09.424] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[288月2026 23:51:09.438] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[288月2026 23:51:09.507] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[288月2026 23:51:09.633] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[288月2026 23:51:10.237] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/wakeup, mod/neoforge
+[288月2026 23:51:10.511] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
+[288月2026 23:51:10.519] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
+[288月2026 23:51:10.679] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
+[288月2026 23:51:11.134] [resourceLoad/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing texture references in model wakeup:item/totem:
+    particle
+[288月2026 23:51:11.357] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 耳机 (ENC AUDIO)
+[288月2026 23:51:11.358] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[288月2026 23:51:11.358] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[288月2026 23:51:11.368] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[288月2026 23:51:11.373] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[288月2026 23:51:11.386] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[288月2026 23:51:11.403] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[288月2026 23:51:11.405] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 4096x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[288月2026 23:51:11.456] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[288月2026 23:51:11.472] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[288月2026 23:51:11.473] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[288月2026 23:51:11.474] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[288月2026 23:51:11.478] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[288月2026 23:51:11.488] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[288月2026 23:51:11.511] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[288月2026 23:51:11.529] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[288月2026 23:51:11.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[288月2026 23:51:11.619] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations

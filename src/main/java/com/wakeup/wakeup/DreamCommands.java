@@ -73,9 +73,11 @@ public final class DreamCommands {
         double min = WakeUpConfig.INSOMNIA_MIN_CHANCE.get();
         double max = WakeUpConfig.INSOMNIA_MAX_CHANCE.get();
         double inc = WakeUpConfig.INSOMNIA_INCREASE_PER_NIGHT.get();
+        double sleepChance = DreamManager.getSleepDreamChance(player);
         src.sendSuccess(() -> Component.literal(
                 "§e失眠状态：已熬夜 " + nights + " 夜，当前每刻进梦概率 " + fmt(chance)
-                        + "（最小 " + fmt(min) + "，最大 " + fmt(max) + "，每夜 +" + fmt(inc) + "）"), false);
+                        + "（最小 " + fmt(min) + "，最大 " + fmt(max) + "，每夜 +" + fmt(inc)
+                        + "），睡觉做梦概率 " + String.format(java.util.Locale.ROOT, "%.1f%%", sleepChance * 100)), false);
         return 1;
     }
 
